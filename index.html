@@ -2,18 +2,20 @@
 <html>
 <head>
 <style>
-ul
+div.daohang{
+}
+div.daohang ul
 {
 list-style-type:none;
 margin:0;
 padding:0;
 overflow:hidden;
 }
-li
+div.daohang li
 {
 float:left;
 }
-a:link,a:visited
+div.daohang a:link,a:visited
 {
 display:block;
 width:246px;
@@ -21,23 +23,19 @@ font-weight:bold;
 color:#FFFFFF;
 background-color:#bebebe;
 text-align:center;
-padding:4px;
+padding:2px;
 text-decoration:none;
 text-transform:uppercase;
 }
-a:hover,a:active
+div.daohang a:hover,a:active
 {
 background-color:#cc0000;
 }
 body {background-image: url(image2_background.jpg);}
-#box {
-  width: 70px;
-  margin: 10px;
-  padding: 5px;
-}
+
 div.img
   {
-  margin:3px;
+  margin:1px;
   border:1px solid #bebebe;
   height:auto;
   width:auto;
@@ -67,15 +65,19 @@ div.desc
 </head>
 
 <body>	
+<div class= "daohang">
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="learning.html">Learning</a></li>
 <li><a href="blog.html">Bolg</a></li>
 <li><a href="about.html">About</a></li>
 </ul>
+</div>
 <img src="mypic.jpg" width = "120" height = "110" style="position:absolute; left:1030px; top:50px;">
 <p style="text-align:right">乔春雨</br></br>男</br>1993 白羊座</br>清华大学软件学院</br>tionry@163.com</br></p>
 <h1>日志列表</h1>
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#C8C8C8,direction:145,strength:15)" width="76%" align = "left" color=#C8C8C8 SIZE=3>
+<div class= "daohang">
 <p><a href="myblog1.html" target="_blank">第一篇日志</a></p>
 <p><a href="myblog1.html" target="_blank">第二篇日志</a></p>
 <p><a href="myblog1.html" target="_blank">第三篇日志</a></p>
@@ -86,7 +88,9 @@ div.desc
 <p><a href="myblog1.html" target="_blank">第八篇日志</a></p>
 <p><a href="myblog1.html" target="_blank">第九篇日志</a></p>
 <p><a href="myblog1.html" target="_blank">第十篇日志</a></p>
-<h2>摆几张照片</h2>
+</div>
+<h2>我的照片</h2>
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#C8C8C8,direction:145,strength:15)" width="76%" align = "left" color=#C8C8C8 SIZE=3>
 <div class="img">
   <a target="_blank" href="IMG_0236.JPG">
   <img src="IMG_0236.JPG" alt="Ballade" width="160" height="160">
@@ -98,7 +102,7 @@ div.desc
   <a target="_blank" href="IMG_0531.JPG">
   <img src="IMG_0531.JPG" alt="Ballade" width="160" height="160">
   </a>
-  <div class="desc">被老姐逼着包饺子><</div>
+  <div class="desc">包饺子><</div>
 </div>
 
 <div class="img">
@@ -114,5 +118,6 @@ div.desc
   </a>
   <div class="desc">那时候还小~</div>
 </div>
+
 </body>
 </html>
