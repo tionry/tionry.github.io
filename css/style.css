@@ -1,0 +1,1138 @@
+/* =================== Getting the new tags to behave START ====================== */
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video { display: block; }
+mark, rp, rt, ruby, summary, time { display: inline }
+
+/* ==================== Getting the new tags to behave END ======================= */
+
+
+
+
+
+/* ========================= Global properties START ============================= */
+
+body {
+	background: #3d3d3d;
+	min-width: 980px;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1em;
+	color: #393939;
+}
+
+html {
+	background: transparent;
+	min-width: 980px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	vertical-align: top;
+	font-size: 100%;
+}
+
+div {
+	border: 0 none;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: top;
+}
+
+a {
+	outline: none;
+	color: #bdd003;
+}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+table, td {
+	border-collapse: collapse;
+}
+
+table, td, img {
+	border: 0;
+}
+
+td, tr {
+	vertical-align: top;
+	text-align: left;
+}
+
+/* ========================= Global properties END =============================== */
+
+
+
+
+
+
+/* ========================= Global Structure START ============================== */
+
+#tail-top-right {
+	background: url(../images/tail-top-right.gif) repeat-x 0% 0%;
+	width: 50%;
+	height: 963px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#main-tail-ver {
+	background: #e5e5e5 url(../images/main-tail-ver.gif) repeat-y 50% 0%;
+}
+
+#main-tail-top {
+	background: url(../images/main-tail-top.gif) repeat-x 50% 0%;
+}
+
+#main-bg-top {
+	background: url(../images/main-bg-top.jpg) no-repeat 50% 0%;
+	position: relative;
+	width: 100%;
+}
+
+#main {
+	position: relative;
+	font-size: 0.75em;
+}
+
+header {
+	position: relative;
+	width: 994px;
+	height: 204px;
+	margin: 0 auto;
+}
+
+section#content {
+	position: relative;
+	width: 994px;
+	margin: 0 auto;
+}
+
+footer {
+	width: 994px;
+	min-height: 237px;
+	height: auto !important;
+	height: 237px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+/* ========================= Global Structure END ================================ */
+
+
+
+
+
+
+/* ====================== Left & Right alignment START =========================== */
+
+.fleft {
+	float: left;
+}
+
+	img.fleft {
+		margin: 5px 19px 45px 0;
+	}
+
+.fright {
+	float: right;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+	float: left;
+	overflow: hidden;
+}
+
+.block-1, .block-2, .block-3, .block-4, .block-5 {
+	float: left;
+	overflow: hidden;
+}
+
+.aligncenter {
+	padding: 15px 0 0 0;
+	text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.wrapper-1 {
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+	font-size: 0%;
+	line-height: 0%;
+	height: 0;
+}
+
+/* ====================== Left & Right alignment END ============================= */
+
+
+
+
+
+/* ============================== header START =================================== */
+
+header strong {
+	display: block;
+	line-height: 1.636em;
+	font-size: 0.917em;
+	text-transform: uppercase;
+	color: #979797;
+	position: absolute;
+	top: 152px;
+	left: 1px;
+}
+
+#twitter {
+	background: url(../images/twitter.png) no-repeat 0% 0%;
+	display: block;
+	width: 39px;
+	height: 34px;
+	overflow: hidden;
+	position: absolute;
+	top: 76px;
+	left: 191px;
+}
+
+/* =============================== header END ==================================== */
+
+
+
+
+
+/* ============================= content START =================================== */
+
+#content #indent {
+	padding: 0 0 55px 0;
+}
+
+	#content p {
+		padding: 0 0 14px 0;
+		line-height: 1.5em;
+		font-size: 1em;
+		color: #a3a3a3;
+	}
+	
+	#content p.extra {
+		padding: 0 0 18px 0;
+	}
+	
+		#content p small {
+			float: right;
+			padding: 0 10% 0 0;
+			font-size: 1em;
+		}
+		
+		#content p small.extra {
+			padding: 0 19% 0 0;
+		}
+
+#column-left {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 704px;
+	padding: 0 28px 0 0;
+}
+
+#column-right {
+	float: left;
+	width: 766px;
+}
+
+nav {
+	position: absolute;
+	top: 23px;
+	left: 0;
+}
+
+	nav li {
+		margin: 0 0 -1px 0;
+		letter-spacing: -1px;
+		line-height: 1.2em;
+		font-size: 2.5em;
+		font-weight: 400;
+		color: #b5b5b5;
+	}
+	
+		nav li a {
+			text-decoration: none;
+			color: #b5b5b5;
+		}
+		
+		nav li.act a {
+			background: url(../images/menu-act.gif) no-repeat 1px 18px;
+			padding: 0 0 0 38px;
+			text-decoration: none;
+			color: #0a0a0b;
+		}
+		
+		nav li a:hover {
+			background: url(../images/menu-act.gif) no-repeat 1px 18px;
+			padding: 0 0 0 38px;
+			text-decoration: none;
+			color: #0a0a0b;
+		}
+
+#phone {
+	background: url(../images/phone.gif) no-repeat 2px 0%;
+	padding: 42px 0 0 0;
+	line-height: 1.2em;
+	letter-spacing: -1px;
+	font-size: 2.5em;
+	font-weight: 400;
+	color: #c9c9c9;
+	position: absolute;
+	top: 538px;
+	left: 0;
+}
+
+	#phone span {
+		display: block;
+		margin: -6px 0 0 0;
+	}
+
+.content-box {
+	width: 100%;
+	overflow: hidden;
+}
+
+	.content-box .tail {
+		background: url(../images/content-tail.gif) repeat-y 0% 0%;
+	}
+	
+	.content-box .top {
+		background: url(../images/content-top.gif) no-repeat 0% 0%;
+	}
+	
+	.content-box .bot {
+		background: url(../images/content-bot.gif) no-repeat 0% 100%;
+		width: 100%;
+	}
+	
+	.content-box .inner {
+		padding: 22px 33px 54px 32px;
+	}
+
+/* ============================== content END ==================================== */
+
+
+
+/* ============================= JS START ===================================== */
+
+.carousel-box {
+	position: relative;
+}
+
+.carousel-box .inner {
+	padding: 0 !important;
+}
+
+.carousel-box ul {
+	width: 701px;
+	height: 471px;
+	overflow: hidden;
+}
+
+	.carousel-box ul li {
+		width: 701px;
+		overflow: hidden;
+	}
+	
+		.carousel-box ul li img {
+			float: left;
+			margin: 0 10px 10px 0;
+		}
+		
+		.carousel-box ul li img.extra {
+			margin: 0 0 10px 0;
+		}
+
+.carousel-box button.prev {
+	background: url(../images/button-prev.png) no-repeat 0% 0%;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	border: none;
+	position: absolute;
+	top: 201px;
+	left: -31px;
+	z-index: 100;
+	cursor: pointer;
+	outline: none;
+}
+
+	.carousel-box button.prev:hover {
+		background-position: 0% -60px;
+	}
+
+.carousel-box button.next {
+	background: url(../images/button-next.png) no-repeat 0% 0%;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	border: none;
+	position: absolute;
+	top: 201px;
+	right: -31px;
+	z-index: 100;
+	cursor: pointer;
+	outline: none;
+}
+
+	.carousel-box button.next:hover {
+		background-position: 0% -60px;
+	}
+
+/* ============================== JS END ====================================== */
+
+
+
+
+
+/* =================== txt, links, lines, titles START =========================== */
+
+h1 {
+	position: absolute;
+	top: 103px;
+	left: 0;
+}
+
+	h1 a {
+		background: url(../images/logo.gif) no-repeat 0% 0%;
+		display: block;
+		width: 422px;
+		height: 47px;
+		overflow: hidden;
+	}
+	
+		h1 a span {
+			display: none;
+		}
+
+h2 {
+	background: url(../images/title-tail.gif) repeat-x 0% 100%;
+	margin: 0 0 22px 0;
+	padding: 0 0 5px 0;
+	letter-spacing: -1px;
+	line-height: 1.2em;
+	font-size: 2.5em;
+	font-weight: 400;
+	color: #272728;
+}
+
+	h2.extra {
+		margin: 0 0 25px 0;
+	}
+
+h3 {
+	line-height: 1.5em;
+	font-size: 1em;
+	font-weight: normal;
+	color: #bdd003;
+}
+
+	h3 a {
+		color: #bdd003 !important;
+	}
+
+h6 {
+	padding: 0 0 18px 0;
+	line-height: 1.5em;
+	font-size: 1em;
+	font-weight: normal;
+	color: #bdd003;
+}
+
+	h6 a {
+		color: #bdd003;
+	}
+
+.link {
+	float: left;
+	line-height: 1.3em;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-decoration: none;
+	color: #bdd003;
+}
+
+	.link:hover {
+		color: #000;
+	}
+
+.title {
+	padding: 0 0 28px 0;
+	letter-spacing: -1px;
+	line-height: 1.2em;
+	font-size: 2.5em;
+	font-weight: 400;
+	color: #c1c1c1;
+}
+
+	.title span {
+		display: block;
+		margin: -6px 0 0 0;
+	}
+
+/* ==================== txt, links, lines, titles END ============================ */
+
+
+
+
+
+/* ============================= forms START ===================================== */
+
+#contact-form {
+	width: 332px;
+	padding: 5px 0 7px 0;
+	overflow: hidden;
+}
+
+	#contact-form label {
+		display: block;
+		width: 100%;
+		height: 30px;
+		overflow: hidden;
+	}
+	
+	#contact-form input {
+		background: none;
+		width: 310px;
+		height: 16px;
+		padding: 3px 10px 3px 10px;
+		border: 1px solid #dbdada;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #b5b5b5;
+	}
+	
+	#contact-form textarea {
+		background: none;
+		width: 310px;
+		height: 129px;
+		padding: 3px 10px 3px 10px;
+		border: 1px solid #dbdada;
+		overflow: auto;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #b5b5b5;
+	}
+	
+	#contact-form a.link {
+		float: right;
+		margin: 7px 0 0 14px;
+	}
+
+#subscribe-form {
+	width: 323px;
+	padding: 2px 0 0 0;
+}
+
+	#subscribe-form strong {
+		display: block;
+		padding: 0 0 8px 0;
+		letter-spacing: 1px;
+		line-height: 1.5em;
+		font-size: 1em;
+		color: #b5b5b5;
+	}
+	
+	#subscribe-form input {
+		background: #fff;
+		width: 200px;
+		height: 16px;
+		padding: 4px 11px 4px 11px;
+		border: none;
+		border-left: 1px solid #afafaf;
+		border-right: 1px solid #afafaf;
+		float: left;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #b5b5b5;
+	}
+	
+	#subscribe-form input#subscribe-submit {
+		background: url(../images/subscribe-submit.gif) no-repeat 0% 0%;
+		width: 87px;
+		height: 24px;
+		padding: 0;
+		border: none;
+		float: right;
+		cursor: pointer;
+	}
+
+#search-form1 {
+	width: 260px;
+	height: 24px;
+	float: right;
+	padding: 1px 0 25px 0;
+}
+
+	#search-form1 input {
+		background: none;
+		width: 200px;
+		height: 16px;
+		padding: 3px 10px 3px 10px;
+		border: 1px solid #dfdede;
+		float: left;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #b5b5b5;
+	}
+	
+	#search-form1 input#search-submit1 {
+		background: url(../images/search-submit1.gif) no-repeat 0% 0%;
+		width: 25px;
+		height: 24px;
+		padding: 0;
+		border: none;
+		float: right;
+		cursor: pointer;
+	}
+
+/* ============================== forms END ====================================== */
+
+
+
+
+
+/* ============================= other START ===================================== */
+
+.pic-indent {
+	margin: 0 0 0 0;
+}
+
+.list {
+	overflow: hidden;
+}
+
+	.list li {
+		background: url(../images/marker.gif) no-repeat 0% 10px;
+		padding: 0 0 0 15px;
+		line-height: 2em;
+		font-size: 1em;
+		font-weight: bold;
+		color: #272728;
+	}
+	
+		.list li a {
+			color: #272728;
+		}
+
+.list-1 {
+	overflow: hidden;
+}
+
+	.list-1 dt {
+		padding: 0 0 2px 1px;
+		line-height: 1.833em;
+		font-size: 1em;
+		font-weight: bold;
+		color: #b5b5b5;
+	}
+	
+	.list-1 dd {
+		padding: 0 0 0 1px;
+		line-height: 1.5em;
+		font-size: 1em;
+		color: #bdd003;
+	}
+	
+		.list-1 dd a {
+			color: #bdd003;
+		}
+
+.list-2 {
+	margin: 0 0 -5px 0;
+	overflow: hidden;
+	line-height: 1.5em;
+	font-size: 1em;
+	color: #a3a3a3;
+}
+
+	.list-2 dt {
+		color: #bdd003;
+	}
+	
+		.list-2 dt a {
+			color: #bdd003;
+		}
+		
+	.list-2 dd {
+		padding: 0 0 18px 0;
+	}
+
+.list-3 {
+	width: 100%;
+	margin: 0 0 -5px 0;
+	overflow: hidden;
+}
+
+	.list-3 li {
+		width: 100%;
+		padding: 0 0 13px 0;
+		overflow: hidden;
+		vertical-align: top;
+	}
+	
+		.list-3 li img {
+			float: left;
+			margin: 5px 19px 0 0;
+		}
+		
+		.list-3 li strong {
+			display: block;
+			line-height: 1.5em;
+			font-size: 1em;
+			font-weight: normal;
+			color: #bdd003;
+		}
+		
+			.list-3 li strong a {
+				color: #bdd003;
+			}
+			
+		.list-3 li p {
+			padding: 0 0 14px 0 !important;
+			line-height: 1.5em !important;
+			font-size: 1em !important;
+			color: #a3a3a3 !important;
+		}
+
+.list-4 {
+	margin: 0 0 -18px 0;
+	overflow: hidden;
+	line-height: 1.5em;
+	font-size: 1em;
+	color: #a3a3a3;
+}
+
+	.list-4 li {
+		padding: 0 0 18px 0;
+	}
+	
+		.list-4 li a {
+			text-decoration: none;
+			color: #bdd003;
+		}
+		
+		.list-4 li a:hover {
+			text-decoration: underline;
+		}
+
+.links {
+	padding: 1px 0 0 0;
+	color: #bdd003;
+}
+
+.table-blog {
+	border-bottom: 1px dashed #bcbcbc;
+	margin: 0 0 5px 0;
+}
+
+	.table-blog tr td {
+		border-top: 1px dashed #bcbcbc;
+		border-right: 1px dashed #bcbcbc;
+	}
+	
+		.table-blog tr td strong {
+			display: block;
+			height: 50px;
+			line-height: 48px;
+			text-align: center;
+		}
+		
+			.table-blog tr td strong.extra {
+				text-align: left;
+			}
+			
+			.table-blog tr td strong.extra1 {
+				padding: 0 0 0 18px;
+				text-align: left;
+			}
+	
+		.table-blog tr td p {
+			width: 137px;
+			padding: 8px 0 13px 0 !important;
+			line-height: 1.5em !important;
+			font-size: 1em !important;
+			color: #a3a3a3 !important;
+		}
+		
+			.table-blog tr td p b {
+				display: block;
+				color: #272728;
+			}
+			
+				.table-blog tr td p b a {
+					text-decoration: none;
+					color: #272728;
+				}
+				
+				.table-blog tr td p b a:hover {
+					text-decoration: underline;
+				}
+				
+		.table-blog tr td small {
+			display: block;
+			width: 63px;
+			height: 57px;
+			padding: 18px 5px 0 17px;
+			line-height: 1.5;
+			font-size: 1em;
+			font-weight: bold;
+			color: #272728;
+		}
+		
+		.table-blog tr td span {
+			display: block;
+			width: 67px;
+			height: 75px;
+			overflow: hidden;
+			line-height: 74px;
+			text-align: center;
+			color: #bdd003;
+		}
+		
+		.table-blog tr td em {
+			display: block;
+			width: 107px;
+			height: 62px;
+			padding: 8px 8px 5px 17px;
+			line-height: 1.5em;
+			font-size: 1em;
+			font-style: normal;
+			color: #a3a3a3;
+		}
+		
+		.table-blog tr td i {
+			display: block;
+			width: 89px;
+			height: 75px;
+			overflow: hidden;
+			line-height: 74px;
+			text-align: center;
+			font-style: normal;
+			color: #bdd003;
+		}
+		
+		.table-blog tr td div {
+			width: 96px;
+			height: 62px;
+			padding: 8px 5px 5px 17px;
+			overflow: hidden;
+			line-height: 1.5em;
+			font-size: 1em;
+			color: #a3a3a3;
+		}
+		
+			.table-blog tr td div b {
+				padding: 0 4px 0 0;
+				color: #272728;
+			}
+
+.privacy {
+	padding: 0 0 4px 0;
+}
+
+	.privacy p {
+		padding: 0 0 18px 0 !important;
+	}
+	
+	.privacy p.no-indent {
+		padding: 0 !important;
+	}
+
+/* ============================== other END ====================================== */
+
+
+div.content-gallery {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	width: 701px;
+	padding: 8px 0 0 0;
+}
+
+div.ss-controls {
+	display:none;
+}
+
+div.nav-controls {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+	div.nav-controls a.prev {
+		background:url(../images/button-prev.png) no-repeat left top;
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-decoration: none;
+		line-height: 0;
+		font-size: 0;
+		text-indent: -100px;
+		position: absolute;
+		top: 537px;
+		left: 229px;
+		z-index: 100;
+	}
+		div.nav-controls a.prev:hover {
+			background-position: 0% -60px;
+		}
+		
+	div.nav-controls a.next {
+		background:url(../images/button-next.png) no-repeat left top;
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-decoration: none;
+		line-height: 0;
+		font-size: 0;
+		text-indent: -100px;
+		position: absolute;
+		top: 537px;
+		left: 932px;
+		z-index: 100;
+	}
+		div.nav-controls a.next:hover {
+			background-position: 0% -60px;
+		}
+		
+div.slideshow-container {
+	position: relative;
+	clear: both;
+	height: 400px; /* This should be set to be at least the height of the largest image in the slideshow */
+	float: left;
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow {
+	
+}
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.slideshow a.advance-link {
+	display: block;
+	width: 464px;
+	height: 367px; /* This should be set to be at least the height of the largest image in the slideshow */
+	/* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div.slideshow img {
+	position:absolute;
+	top:0;
+	left:0;
+}
+div.download {
+	float: right;
+}
+
+#caption {
+	position: relative;
+}
+
+span.image-caption {
+	background: #fff;
+	width: 218px;
+	height: 367px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+div.caption {
+	width: 218px;
+	height: 367px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+	div.caption p {
+		padding: 0 5px 15px 0 !important;
+		line-height: 1.5em !important;
+		font-size: 1em !important;
+		color: #a3a3a3 !important;
+	}
+	
+	div.caption ul {
+		position: relative;
+		padding: 0 0 0 1px;
+	}
+	
+		div.caption ul li {
+			background: url(../images/marker.gif) no-repeat 0% 10px;
+			padding: 0 0 0 15px;
+			line-height: 2em;
+			font-size: 1em;
+			font-weight: bold;
+			color: #272728 !important;
+		}
+		
+			div.caption ul li a {
+				background: #fff;
+				color: #272728 !important;
+			}
+
+.work-caption {
+	margin: -7px 0 0 0;
+	padding: 0 0 16px 0;
+	letter-spacing: -1px;
+	line-height: 1.2em;
+	font-size: 2.083em;
+	font-weight: 400;
+	color: #c1c1c1;
+}
+
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+ul.thumbs {
+	position: relative;
+	width: 701px;
+	height: 147px;
+	overflow: hidden;
+	z-index: 1;
+}
+ul.thumbs li {
+	width: 227px;
+	height: 147px;
+	float: left;
+	padding: 0 10px 0 0;
+}
+ul.thumbs li.extra {
+	padding: 0;
+}
+a.thumb {
+	
+}
+
+ul.thumbs li.selected a.thumb {
+	
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+}
+div.pagination {
+	display: none;
+}
+div.navigation {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	padding-bottom:45px;
+}
+
+div.navigation div.bottom {
+	
+}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	margin-right: 2px;
+	padding: 4px 8px 3px 7px;
+	color:#212f39;
+	font-weight:bold;
+	display:inline-block;
+	background:#aebebf;
+}
+div.pagination a:hover {
+	text-decoration: none;
+}
+div.pagination span.current {
+	font-weight: bold;
+	background:url(images/pagination-bg.gif) no-repeat left top;
+	color: #fff;
+}
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+div.pagination.bottom {
+	display:none;
+}
+
+
+
+
+
+
+
+
+/* ============================ footer START ===================================== */
+
+#footer-tail {
+	background: #3d3d3d url(../images/footer-tail.gif) repeat-x 0% 0%;
+}
+
+footer .inner {
+	padding: 56px 37px 0 2px;
+}
+
+footer p {
+	padding: 10px 0 0 0;
+	line-height: 1.333em;
+	font-size: 1em;
+	font-weight: bold;
+	color: #b5b5b5;
+}
+
+	footer p a {
+		color: #bdd003;
+	}
+
+footer .block-1 {
+	width: 165px;
+	padding: 0 0 0 0;
+}
+
+footer .block-2 {
+	width: 124px;
+	padding: 0 0 0 0;
+}
+
+footer .block-3 {
+	width: 121px;
+	padding: 0 0 0 0;
+}
+
+footer .block-4 {
+	width: 222px;
+	padding: 0 0 0 0;
+}
+
+footer .block-5 {
+	width: 323px;
+}
+
+/* ============================= footer END ====================================== */

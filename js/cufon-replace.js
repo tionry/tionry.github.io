@@ -1,0 +1,1 @@
+Cufon.replace('h2, nav ul li, #phone, .title, .link, .work-caption', { fontFamily: 'FuturisExtra', hover: 'true' });

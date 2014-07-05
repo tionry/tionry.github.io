@@ -1,0 +1,7 @@
+div.nav-controls a.prev:hover {
+	background-position: 0% -59px;
+}
+
+div.nav-controls a.next:hover {
+	background-position: 0% -59px;
+}
