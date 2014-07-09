@@ -4,33 +4,52 @@
 		<title>news</title>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		
+		<embed src="thingsYDK.mp3" autostart="true" hidden = true loop = "true"></embed>
 		<style type="text/css">
-		* {
+		.title-pos{
+			position:absolute;
+			left:35%;
+			top: 15px;						
+		}
+		.title-pos a{
+		text-decoration: none;
+		color:#FFF;
+		}
+		* {					
 			padding:0px;
 			margin:0px;
 		}
 		.roll-news {
-			width:480px;
-			height:360px;
+			overflow:hidden;
+			width:780px;
+			height:560px;
 			border:solid 1px #c1c1c1;
 		}
-		.roll-news-index-hover {
-			background-color:white;
+		.news-position{
+			position:absolute;
+			left:18%;
+			top:60px;
+			//background-color: gray; 
+			padding: 20px;
 		}
-		.roll-news-image img {			
-			width:480px;
-			height:360px;
+		.roll-news-index-hover {
+			background-color:rgba(0, 0, 0, 0.05);
+		}
+		.roll-news-image img {	
+			overflow:hidden;	
+			width:780px;
+			height:560px;
 		}
 		.roll-news-index {
 			position:relative;
 			top:-50px;
-			margin-right:5px;
+			margin-right:1px;
 			float:right;
 		}
 		.roll-news-index {
 		}
 		.roll-news-index li {
+			font-weight:bold;
 			list-style:none;
 			float:left;
 			font-size:12px;
@@ -40,8 +59,8 @@
 			line-height:16px;
 			cursor:pointer;
 			margin:0 3px;
-			background-image:url(opacity_50.png);
 			text-align:center;
+			color:rgba(0, 0, 0, 0.9)
 		}
 		.roll-news-title {
 			position:relative;
@@ -49,98 +68,23 @@
 			padding-left:10px;
 			height:27px;
 			line-height:20px;
-			background:url(opacity_50.png);
 		}
 		.roll-news-title a {
-			font-size:15px;
+			font-weight:bold;
+			font-size:20px;
 			text-decoration:none;
 			color:#222222;
 		}
 		.roll-news-title a:hover {
-			color:blue;
+			color:rgba(0, 0, 0, 0.5);
 		}
 		</style>
-		<script type="text/javascript">
-		
-			$(document).ready(function(){		   
-				var index=0;
-				var slideFlag = true;
-				var length=$(".roll-news-image img").length;
-
-				function showImg(i){
-					$(".roll-news-image img")
-					.eq(i).stop(true,true).fadeIn(1800)
-					.siblings("img").hide();
-
-					$(".roll-news-index li").removeClass("roll-news-index-hover");
-					$(".roll-news-index li").eq(i).addClass("roll-news-index-hover");
-
-					$(".roll-news-title a")
-					.eq(i).stop(true,true).fadeIn(1800)
-					.siblings("a").hide();
-				}
-				showImg(index);
-				
-				$(".roll-news-index li").click(function(){
-					index = $(".roll-news-index li").index(this);
-					showImg(index);
-					slideFlag = false;
-				});	
-				
-				function autoSlide() {
-					setInterval(function() {
-						if(slideFlag) {
-							showImg((index+1) % length);
-							index = (index+1)%length;
-						}
-						slideFlag = true;
-					}, 3000);
-				}
-				
-				autoSlide();
-				
-			});
-		</script>
-		<script>
-		void function() {
-		var url = '/data.json';
-
-		function processData(data) {
-			$('img').each(function(index,m){
-			var c = $(m);
-			c[0].setAttribute("src",data.news[index].pic_href);			
-			})
-						
-			$('a').each(function(index,m){
-			var c = $(m);
-			c[0].innerHTML=data.news[index].new_title;
-			c[0].setAttribute("href",data.news[index].news_href);
-			})
-		  }
-
-		  function handler() {
-			if (this.readyState == this.DONE) {
-			  if (this.status == 200) {
-				try {
-				  processData(JSON.parse(this.responseText));
-				} catch(ex) {
-				  console.log(ex.message);
-				}
-			  }
-			}
-		  }
-
-		  function ajax() {
-			var client = new XMLHttpRequest();
-			client.onreadystatechange = handler;
-			client.open('GET', url,true);
-			client.send();
-		  }
-		   ajax();
-		}();
-		</script>
+		<script type="text/javascript" src = "js/js_1.js"></script>
+		<script type="text/javascript" src = "js/js_2.js"></script>
 	</head>
-	<body>
+	<body style = "background-color:rgba(0, 0, 0, 0.8);">
+	<h1 class = "title-pos"> <a href="" >多的是你不知道的事</a></h1>
+	<div class= "news-position">
 		<div class="roll-news">
 			<div class="roll-news-image">
 				<img src="http://img1.gtimg.com/news/pics/hv1/39/16/1647/107100294.jpeg" style="display:none">
@@ -159,6 +103,7 @@
 				<a href=""" style="display:none">图片2：点击后跳转</a>
 				<a href="" style="display:none">图片3：点击后跳转</a>
 			</div>
+		</div>
 		</div>
 	</body>
 </html>
