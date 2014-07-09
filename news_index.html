@@ -110,15 +110,11 @@
 			var c = $(m);
 			c[0].setAttribute("src",data.news[index].pic_href);			
 			})
-			
-			$('li').each(function(index,m){
-			var c = $(m);
-			c[0].setAttribute("href",data.news[index].news_href);	
-			
-			})
+						
 			$('a').each(function(index,m){
 			var c = $(m);
 			c[0].innerHTML=data.news[index].new_title;
+			c[0].setAttribute("href",data.news[index].news_href);
 			})
 		  }
 
