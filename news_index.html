@@ -106,13 +106,19 @@
 		var url = '/data.json';
 
 		function processData(data) {
-			$('div.roll-news-image').each(function(index,m){
-			$(m).setAttribute('src',data[index].pic_href);
+			$('img').each(function(index,m){
+			var c = $(m);
+			c[0].setAttribute("src",data.news[index].pic_href);			
 			})
 			
-			$('div.roll-news-title').each(function(index,m){
-			$(m).setAttribute('href',data[index].news_href);
-			$(m).innerHTML=data[index].new_title;
+			$('li').each(function(index,m){
+			var c = $(m);
+			c[0].setAttribute("href",data.news[index].news_href);	
+			
+			})
+			$('a').each(function(index,m){
+			var c = $(m);
+			c[0].innerHTML=data.news[index].new_title;
 			})
 		  }
 
@@ -153,9 +159,9 @@
 				</ul>
 			</div>
 			<div class="roll-news-title">
-				<a href="http://news.qq.com/a/20140708/043484.htm" target="aa">河北张家口现治霾神器：用“雾炮”治雾霾</a>
-				<a href="" target="_blank" style="display:none">图片2：点击后跳转</a>
-				<a href="" target="_blank" style="display:none">图片3：点击后跳转</a>
+				<a href="http://news.qq.com/a/20140708/043484.htm">河北张家口现治霾神器：用“雾炮”治雾霾</a>
+				<a href=""" style="display:none">图片2：点击后跳转</a>
+				<a href="" style="display:none">图片3：点击后跳转</a>
 			</div>
 		</div>
 	</body>
