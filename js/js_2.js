@@ -9,9 +9,10 @@ void function() {
 						
 			$('a').each(function(index,m){
 			var c = $(m);
-			if(index == 0) continue;
+			if(index>0){
 			c[0].innerHTML = data.news[index - 1].new_title;
 			c[0].setAttribute("href",data.news[index - 1].news_href);
+			}
 			})
 		  }
 
