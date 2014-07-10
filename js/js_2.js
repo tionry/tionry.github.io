@@ -4,12 +4,12 @@ void function() {
 		function processData(data) {
 			$('img').each(function(index,m){
 			var c = $(m);
-			c[0].setAttribute("src",data.news[index].pic_href);			
+			if(index < 3) c[0].setAttribute("src",data.news[index].pic_href);			
 			})
 						
 			$('a').each(function(index,m){
 			var c = $(m);
-			if(index>0){
+			if(index>0 && index < 3){
 			c[0].innerHTML = data.news[index - 1].new_title;
 			c[0].setAttribute("href",data.news[index - 1].news_href);
 			}
