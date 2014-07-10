@@ -1,0 +1,28 @@
+{
+	"comments":[
+	{
+		"name":"你瞅啥";
+		"pic":"image/h_image_1.jepg";
+		"content":"天下兴亡，匹夫有责";
+		},
+	{
+		"name":"瞅你咋地";
+		"pic":"image/h_image_2.jpg";
+		"content":"在这个世界里有太多不能了解的事";
+	},
+	{
+		"name":"出来唠唠";
+		"pic":"image/h_image_3.jpg";
+		"content":"不知道北京的雾霾什么时候能够治好";
+	},
+	{
+		"name":"爱咋咋地";
+		"pic":"image/h_image_4.jpg";
+		"content":"支持德国夺冠！";
+	},
+	{
+		"name":"二龙湖浩哥";
+		"pic":"image/h_image_5.jpg";
+		"content":"支持阿根廷夺冠！";
+	}]
+}
