@@ -1,4 +1,5 @@
-$(document).ready(function(){		   
+		$(document).ready(function(){	
+				comments_json(localStorage.page_num);		
 				var index=0;
 				var slideFlag = true;
 				var length=$(".roll-news-image img").length;				
