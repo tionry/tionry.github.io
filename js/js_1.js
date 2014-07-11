@@ -1,9 +1,7 @@
 $(document).ready(function(){		   
 				var index=0;
 				var slideFlag = true;
-				var length=$(".roll-news-image img").length;
-				console.log(page_num);
-				comments_json(localStorage.page_num);
+				var length=$(".roll-news-image img").length;				
 				function showImg(i){
 					$(".roll-news-image img")
 					.eq(i).stop(true,true).fadeIn(1800)
