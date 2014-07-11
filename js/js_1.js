@@ -1,4 +1,4 @@
-			$(document).ready(function slide(){	
+		$(document).ready(function slide(){	
 						
 				var index=0;
 				var slideFlag = true;
@@ -29,7 +29,7 @@
 							showImg((index+1) % length);
 							index = (index+1)%length;
 						}
-						slideFlag = false;
+						slideFlag = true;
 					}, 3000);
 				}
 				
