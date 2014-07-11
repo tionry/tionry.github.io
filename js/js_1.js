@@ -1,7 +1,7 @@
-		$(document).ready(function slide(slideFlag){	
+			$(document).ready(function slide(){	
 						
 				var index=0;
-				
+				var slideFlag = true;
 				var length=$('.roll-news-image img').length;				
 				function showImg(i){
 					$('.roll-news-image img')
