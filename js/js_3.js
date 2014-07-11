@@ -4,7 +4,7 @@
 		
 		function processData(data) {
 			var c  =$('#span_currcommenttotal0');
-			c[0].innerHTML = (page_num -1)*3;
+			c[0].innerHTML = (page_num -1)*3 + 1;
 			var b  =$('#span_currcommenttotal1');
 			b[0].innerHTML = (page_num -1)*3 + data.comments.length;
 			for(var a = 0;a < data.comments.length;a++){				
