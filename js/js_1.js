@@ -29,7 +29,7 @@
 							showImg((index+1) % length);
 							index = (index+1)%length;
 						}
-						
+						slideFlag = false;
 					}, 3000);
 				}
 				
