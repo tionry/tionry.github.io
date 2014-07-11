@@ -5,7 +5,7 @@
 		function processData(data) {
 			console.log(data.comments.length);	
 			for(var a = 0;a < data.comments.length;a++){				
-				$('body').append(
+				$('div.comments').append(
 				"<div class = 'comment'><div class ='commentcon'><div class = 'userPhoto'><img width = '50' height = '50' src = '"+data.comments[a].pic+"'></img></div><div class = 'bar'><a href='#blank' style = 'text-decoration: none''>"+data.comments[a].name+"</a></div><div class = 'con'><div class = 'text'><p>" + data.comments[a].content+"</p><br></div></div></div></div>");
 			}
 		  }
