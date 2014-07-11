@@ -199,6 +199,7 @@
 		</style>
 		<script type="text/javascript" src = "js/js_1.js"></script>
 		<script type="text/javascript" src = "js/js_2.js"></script>
+		<script type="text/javascript" src = "js/js_3.js"></script>
 	</head>
 	<body style = "background-color:rgba(0, 0, 0, 0.8);">
 		<h1 class = "title-pos"> <a href="" >多的是你不知道的事</a></h1>
@@ -236,26 +237,25 @@
 			<ul class="turn">
 								<li title="上一页" class="pre"><span>上一页</span></li>
 				
-						<li title="下一页" class="next"><a onclick="nova_call(decodeURIComponent(this.href),{'videoid':'XNzM3ODYxNDU2','sid':689587242,'page':2,'last_modify':1404969428, 'showid':271008},'displayComments',undefined,1);commentsPage(2);return false;" href="http://comments.youku.com/comments/~ajax/vpcommentContent.html" charset="404-15-1-1">下一页</a></li>
+						<li title="下一页" class="next"><a onclick="comments_json(1)">下一页</a></li>
 					</ul>
 			<ul class="pages">
-												<li class="current"><span>1</span></li>
-													<li><a onclick="nova_call(decodeURIComponent(this.href),{'videoid':'XNzM3ODYxNDU2','sid':689587242,'page':2,'last_modify':1404969428, 'showid':271008},'displayComments',undefined,1);commentsPage(2);return false;" href="http://comments.youku.com/comments/~ajax/vpcommentContent.html" charset="404-15-1-1">2</a></li>
+												<li><a onclick="comments_json(1)"><span>1</span></a></li>
+													<li><a onclick="comments_json(2)">2</a></li>
 										</ul>
 			</div>
 		
 			<div class = 'comment'>
 				<div class ='commentcon'>
 					<div class = 'userPhoto'>
-						<img width = '50' height = '50' src = 'images/h_image_1.jpeg'></img>		
+						<img width = "50" height = "50" src = "image/h_image_1.jpeg"></img>		
 					</div>
 					<div class = 'bar'>	
-						<a href="#blank" style = 'text-decoration: none'>你瞅啥</a>
+						<a href="#blank" style = "text-decoration: none">你瞅啥</a>
 					</div>	
 					<div class = 'con'>
 						<div class = 'text'>
-							<p>天下兴亡，匹夫有责</p>
-							<br>
+							<p style="position:">天下兴亡，匹夫有责</p>
 						</div>
 					</div>
 				</div>	
@@ -263,7 +263,7 @@
 			<div class = 'comment'>
 				<div class ='commentcon'>
 					<div class = 'userPhoto'>
-						<img width = "50" height = "50" src = "images/h_image_2.jpg"></img>		
+						<img width = "50" height = "50" src = "image/h_image_2.jpg"></img>		
 					</div>
 					<div class = 'bar'>	
 						<a href="#blank" style = "text-decoration: none">瞅你咋地</a>
@@ -275,7 +275,7 @@
 			<div class = 'comment'>
 				<div class ='commentcon'>
 					<div class = 'userPhoto'>
-						<img width = "50" height = "50" src = "images/h_image_3.jpg"></img>		
+						<img width = "50" height = "50" src = "image/h_image_3.jpg"></img>		
 					</div>
 					<div class = 'bar'>	
 						<a href="#blank" style = "text-decoration: none">出来唠唠</a>

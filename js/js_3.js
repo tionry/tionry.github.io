@@ -1,0 +1,32 @@
+void function comments_json(page_num) {
+		$('div.comment').remove();
+		var url = '/comments'+page_num+'.json';
+
+		function processData(data) {
+			console.log(data.comments.length);	
+			for(var a = 0;a < data.comments.length;a++){				
+				$('body').append(
+				"<div class = 'comment'><div class ='commentcon'><div class = 'userPhoto'><img width = '50' height = '50' src = '"+data.comments[a].pic+"'></img></div><div class = 'bar'><a href='#blank' style = 'text-decoration: none''>"+data.comments[a].name+"</a></div><div class = 'con'><div class = 'text'><p>" + data.comments[a].content+"</p><br></div></div></div></div>");
+			}
+		  }
+
+		  function handler() {
+			if (this.readyState == this.DONE) {
+			  if (this.status == 200) {
+				try {
+				  processData(JSON.parse(this.responseText));
+				} catch(ex) {
+				  console.log(ex.message);
+				}
+			  }
+			}
+		  }
+
+		  function ajax() {
+			var client = new XMLHttpRequest();
+			client.onreadystatechange = handler;
+			client.open('GET', url,true);
+			client.send();
+		  }
+		   ajax();
+		}(2);
