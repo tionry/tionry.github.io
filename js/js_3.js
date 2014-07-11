@@ -29,4 +29,4 @@ void function comments_json(page_num) {
 			client.send();
 		  }
 		   ajax();
-		}(2);
+		};
