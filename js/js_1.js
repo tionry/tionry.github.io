@@ -1,35 +1,35 @@
 		$(document).ready(function slide(){	
 						
-				var index=0;
-				var slideFlag = true;
-				var length=$('.roll-news-image img').length;				
-				function showImg(i){
+				var i=0;
+				var flag = true;
+				var len=$('.roll-news-image img').length;				
+				function show_news(i){
 					$('.roll-news-image img')
 					.eq(i).stop(true,true).fadeIn('slow')
 					.siblings("img").hide();
 
-					$('.roll-news-index li').removeClass('roll-news-index-hover');
-					$('.roll-news-index li').eq(i).addClass('roll-news-index-hover');
+					$('.roll-news-i li').removeClass('roll-news-i-hover');
+					$('.roll-news-i li').eq(i).addClass('roll-news-i-hover');
 
 					$('.roll-news-title a')
 					.eq(i).stop(true,true).fadeIn('slow')
 					.siblings('a').hide();
 				}
-				showImg(index);
+				show_news(i);
 				
-				$('.roll-news-index li').click(function(){
-					index = $('.roll-news-index li').index(this);
-					showImg(index);
-					slideFlag = false;
+				$('.roll-news-i li').click(function(){
+					i = $('.roll-news-i li').i(this);
+					show_news(i);
+					flag = false;
 				});	
 				
 				function autoSlide() {
 					setInterval(function() {
-						if(slideFlag) {
-							showImg((index+1) % length);
-							index = (index+1)%length;
+						if(flag) {
+							show_news((i+1) % len);
+							i = (i+1)%len;
 						}
-						slideFlag = true;
+						flag = true;
 					}, 3000);
 				}
 				
