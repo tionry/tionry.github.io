@@ -1,4 +1,4 @@
-void function() {
+	function() {
 		var url = '/data.json';
 
 		function processData(data) {

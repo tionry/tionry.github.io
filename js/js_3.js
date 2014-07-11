@@ -1,4 +1,4 @@
-void function comments_json(page_num) {
+	function comments_json(page_num) {
 		$('div.comment').remove();
 		var url = '/comments'+page_num+'.json';
 
