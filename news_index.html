@@ -241,47 +241,10 @@
 												<li><a onclick = "comments_json(1)"><span>1</span></a></li>
 													<li><a onclick = "comments_json(2)">2</a></li>
 										</ul>
-			</div>
-		
-			<div class = 'comment'>
-				<div class ='commentcon'>
-					<div class = 'userPhoto'>
-						<img width = "50" height = "50" src = "images/h_image_1.jpeg"></img>		
-					</div>
-					<div class = 'bar'>	
-						<a href="#blank" style = "text-decoration: none">你瞅啥</a>
-					</div>	
-					<div class = 'con'>
-						<div class = 'text'>
-							<p style="position:">天下兴亡，匹夫有责</p>
-						</div>
-					</div>
-				</div>	
-			</div>
-			<div class = 'comment'>
-				<div class ='commentcon'>
-					<div class = 'userPhoto'>
-						<img width = "50" height = "50" src = "images/h_image_2.jpg"></img>		
-					</div>
-					<div class = 'bar'>	
-						<a href="#blank" style = "text-decoration: none">瞅你咋地</a>
-					</div>	
-					<p style="position:">楼上说的对</p>
-					
-				</div>	
-			</div>
-			<div class = 'comment'>
-				<div class ='commentcon'>
-					<div class = 'userPhoto'>
-						<img width = "50" height = "50" src = "images/h_image_3.jpg"></img>		
-					</div>
-					<div class = 'bar'>	
-						<a href="#blank" style = "text-decoration: none">出来唠唠</a>
-					</div>	
-					<p style="position:">不知道北京的雾霾什么时候能够治好</p>
-					
-				</div>	
-			</div>
+			</div>		
+			<script>
+			comments_json(localStorage.page_num);
+			</script>
 		</div>				
 	</body>
 </html>
