@@ -1,7 +1,7 @@
-		$(document).ready(function(){	
+		$(document).ready(function slide(slideFlag){	
 						
 				var index=0;
-				var slideFlag = true;
+				
 				var length=$('.roll-news-image img').length;				
 				function showImg(i){
 					$('.roll-news-image img')
@@ -29,7 +29,7 @@
 							showImg((index+1) % length);
 							index = (index+1)%length;
 						}
-						slideFlag = true;
+						
 					}, 3000);
 				}
 				
