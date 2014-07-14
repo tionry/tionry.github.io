@@ -78,7 +78,7 @@ table, td, tr{
 tr,td{
 	width:33px;
 	height:33px;
-	border-color: blue;
+	border-color: black;
 	border-width: 1px;
 	border-style: dashed;
 	background-repeat:no-repeat;
