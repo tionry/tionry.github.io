@@ -11,7 +11,10 @@ target:5
 */
 //横坐标格子，纵坐标格子
 var grid_size = 36;
-grid_flag = new Arra
+grid_flag = new Array([226]);
+for(i = 1;i < 226;i++){
+	grid_flag[i] = 0;
+}
 function draw_laser(light_x,light_y,angle,light_color)
 {
 	var temp_angle;
