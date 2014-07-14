@@ -135,7 +135,26 @@
 	<script>
         	for(var i = 0; i < 15; i++) $("table").prepend("<tr></tr>");
         	for(var i = 0; i < 15; i++) $("tr").prepend("<td></td>");
-        	for(var i = 0; i < $("td").length; i++) $($("td")[i]).attr("id", i);            
+        	for(var i = 0; i < $("td").length; i++) $($("td")[i]).attr("id", i);  
+			
+			var c_t = document.getElementById("tool_canvas");
+			var cxt_t = c_t.getContext("2d");		
+			cxt_t.lineWidth = 1;
+			cxt_t.beginPath();
+			for(var a = 0.5;a < 300;a+= 30){
+				
+				cxt_t.moveTo(a,0);
+				cxt_t.lineTo(a,150);		
+				
+			}
+			
+			for(var a = 0.5;a < 150;a+=50){
+				
+				cxt_t.moveTo(0,a);
+				cxt_t.lineTo(336,a);		
+				
+			}
+			cxt_t.stroke();
     </script>
 	
 </html>
