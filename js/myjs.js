@@ -44,7 +44,7 @@ function place(){
 			var color = levelObj.laser[i].color;
 			var x = levelObj.laser[i].x;
 			var y = levelObj.laser[i].y;
-			var box = $("td")[Number(y*12)+Number(x)];
+			var box = $("td")[Number(y*15)+Number(x)];
 			var url = urlObj.url.laser[color];
 			var ddd = "url"+"("+"'"+url+"'"+")";
 			$(box).css("background-image", ddd);
@@ -58,7 +58,7 @@ function place(){
 			var color = levelObj.target[i].color;
 			var x = levelObj.target[i].x;
 			var y = levelObj.target[i].y;
-			var box = $("td")[Number(y*12)+Number(x)];
+			var box = $("td")[Number(y*15)+Number(x)];
 			var url = urlObj.url.target[color+'1'];
 			var ddd = "url"+"("+"'"+url+"'"+")";
 			$(box).css("background-image", ddd);
