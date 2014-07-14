@@ -11,7 +11,7 @@ target:5
 */
 //横坐标格子，纵坐标格子
 var grid_size = 36;
-
+grid_flag = new Arra
 function draw_laser(light_x,light_y,angle,light_color)
 {
 	var temp_angle;
@@ -21,7 +21,7 @@ function draw_laser(light_x,light_y,angle,light_color)
 		draw_edge_line(light_x,light_y,light_x + light_angle_x,light_y + light_angle_y,light_color);
 		return;
 	}
-	switch(grid_flag[light_x + light_angle_x][light_y + light_angle_y]){
+	switch(grid_flag[(light_x + light_angle_x)*15+ light_y + light_angle_y]){
 		case 0:
 			draw_laser_line(light_x,light_y,light_x + light_angle_x,light_y + light_angle_y,light_color);
 			draw_laser(light_x + light_angle_x,light_y + light_angle_y,angle,light_color);
