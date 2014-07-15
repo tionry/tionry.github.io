@@ -38,7 +38,7 @@ function loadLevel(){
 	$("td").attr("flag","0");
 	$($("td").children()).remove();
 	$("toDelete").ready(function(){
-		    $(".toDelete").load('https://YutingWang.github.io/MyGame/js/level'+storage.level+'.json',function(responseTxt,statusTxt,xhr){
+		    $(".toDelete").load('https://tionry.github.io/js/level'+storage.level+'.json',function(responseTxt,statusTxt,xhr){
 		    	if(statusTxt=="success")
 		      	{
 		       		data = responseTxt;
@@ -57,7 +57,7 @@ function loadLevel(){
 function loadUrl(){
 	$("toDelete").ready(function(){
 //=================载入关卡中icon图标地址======urlObj===================
-		    $(".toDelete").load('https://YutingWang.github.io/MyGame/js/icon.json',function(responseTxt,statusTxt,xhr){
+		    $(".toDelete").load('https://tionry.github.io/js/icon.json',function(responseTxt,statusTxt,xhr){
 		    	if(statusTxt=="success")
 		      	{
 		       		data = responseTxt;
