@@ -1,4 +1,5 @@
-body{	
+body{
+	
 	background-image:url("https://YutingWang.github.io/MyGame/pic/background.jpg");
 	background-position:top;
 	background-size:100% auto;
@@ -6,7 +7,7 @@ body{
   	background-repeat:repeat-y;
 }
 .container{
-	position:relative;
+	positon:relatve;
 	width:1000px;
 	height:500px;
 	padding-left:10%;
@@ -26,7 +27,6 @@ body{
 	/* background-color: beige; */
 	text-align: center;
 	color: white;
-	font-family: fantasy;
 }
 .inmenu{
 	positon:relative;
@@ -50,7 +50,6 @@ body{
 }
 .inmenu:hover{
 	border:3px dashed white;
-	background:red;
 }
 
 .resume{
@@ -73,46 +72,15 @@ a{
 	color:white;
 }
 table, td, tr{
-	 empty-cells: show;
+	empty-cells: show;
 	 border-collapse:collapse;
-	 padding:0;
-	 margin:0;
-
 }
-td{
-	width:35px;
-	height:35px;
-	border-color: blue;
+tr,td{
+	width:33px;
+	height:33px;
+	border-color: black;
 	border-width: 1px;
 	border-style: dashed;
 	background-repeat:no-repeat;
 	background-size:100%;
-	padding:0;
-	margin:0;
-}
-
-img{
-	width:100%;
-}
-
-#howToPlay{
-	position:absolute;
-	top: 20%;
-	left: 25%;
-	width: 60%;
-	height: 400px;
-	background-color: rgba(245, 245, 220, 0.52);
-	z-index: 10;
-	display:none;
-}
-
-#about{
-	position:absolute;
-	top: 20%;
-	left: 25%;
-	width: 60%;
-	height: 400px;
-	background-color: rgba(245, 245, 220, 0.52);
-	z-index: 10;
-	display:none;
 }
