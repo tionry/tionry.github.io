@@ -30,6 +30,7 @@ for(var i = 0; i < $("td").length; i++)
 var storage = window.localStorage;
 if(storage.level == undefined) storage.level = 1;
 loadLevel();
+flag_t = new Array([levelObj.target.length]);
 loadUrl();
 
 //=================载入关卡中元素位置===========levelObj================
@@ -114,6 +115,9 @@ function place(){
 			for(var i = 0;i < levelObj.laser.length;i++){
 			draw_laser(cxt,Number(levelObj.laser[i].x), Number(levelObj.laser[i].y), Number(levelObj.laser[i].angle), levelObj.laser[i].color);
 			}
+			if(success){
+		alert("success!");
+	}
 	});
 }
 
@@ -161,6 +165,9 @@ function loadMirror(){
 			for(var i = 0;i < levelObj.laser.length;i++){
 			draw_laser(cxt,Number(levelObj.laser[i].x), Number(levelObj.laser[i].y), Number(levelObj.laser[i].angle), levelObj.laser[i].color);
 			}
+			if(success){
+		alert("success!");
+	}
 	});
 }
 
@@ -197,6 +204,9 @@ $($(ev.target).parents()).attr("flag","0");
 			for(var i = 0;i < levelObj.laser.length;i++){
 			draw_laser(cxt,Number(levelObj.laser[i].x), Number(levelObj.laser[i].y), Number(levelObj.laser[i].angle), levelObj.laser[i].color);
 			}
+	if(success){
+		alert("success!");
+	}
 }
 
 function drop(ev)
@@ -216,5 +226,17 @@ function drop(ev)
 			for(var i = 0;i < levelObj.laser.length;i++){
 			draw_laser(cxt,Number(levelObj.laser[i].x), Number(levelObj.laser[i].y), Number(levelObj.laser[i].angle), levelObj.laser[i].color);
 			}
+	if(success){
+		alert("success!");
+	}
 }
 
+//==============判断过关====================================
+
+function success()
+{
+	for(var i = 0;i < levelObj.target.length;i++){
+		if(flag_t[i] != 1)	return false;
+	}
+	return true;
+}
